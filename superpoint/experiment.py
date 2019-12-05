@@ -15,6 +15,8 @@ logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S', level=logging.INFO)
 import tensorflow as tf  # noqa: E402
 
+os.environ["CUDA_VISIBLE_DEVICES"]="0"
+os.environ["TMPDIR"]="/datadrive/ochuiko/keypoint/SuperPoint/temp"
 
 def train(config, n_iter, output_dir, checkpoint_name='model.ckpt'):
     checkpoint_path = os.path.join(output_dir, checkpoint_name)
