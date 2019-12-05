@@ -2,7 +2,7 @@ data:
     name: 'coco'
     cache_in_memory: false
     validation_size: 96
-    labels: outputs/mp_synth-v11_export_ha2  # use your own labels here
+    labels: outputs/magic-point_coco-export1  # use your own labels here
     augmentation:
         photometric:
             enable: true
